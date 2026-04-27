@@ -1,8 +1,4 @@
 class User:
-    #__init__ é o método construtor da classe,
-    #  ele é chamado automaticamente quando um objeto da classe é criado.
-    #  Ele é usado para inicializar os atributos do objeto.
-    #self é uma referência ao objeto atual, e é usado para acessar os atributos e métodos do objeto.
     def __init__(self, nome, telefone, email, senha):
 
         self.__nome = nome
@@ -10,7 +6,6 @@ class User:
         self.__email = email
         self.__senha = senha
     
-    #métodos de acesso (getters) para os atributos privados
     def get_nome(self):
         return self.__nome
     
