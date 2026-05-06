@@ -65,16 +65,16 @@
             font_size: (root.width**2 + root.height**2) / 17**4
             text: "Already have an Account? Log In"
             on_release:
-            root.manager.transition.direction = "left"
-            root.login()
+                root.manager.transition.direction = "left"
+                root.login()
         Button:
             pos_hint:{"x":0.2,"y":0.05}
             size_hint: 0.6, 0.15
             text: "Submit"
             font_size: (root.width**2 + root.height**2) / 14**4
             on_release:
-            root.manager.transition.direction = "left"
-            root.submit()
+                root.manager.transition.direction = "left"
+                root.submit()
 
 <LoginWindow>:
     name: "login"
@@ -114,8 +114,8 @@
             font_size: (root.width**2 + root.height**2) / 13**4
             text: "Login"
             on_release:
-            root.manager.transition.direction = "up"
-            root.loginBtn()
+                root.manager.transition.direction = "up"
+                root.loginBtn()
 
         Button:
             pos_hint:{"x":0.3,"y":0.3}
@@ -123,8 +123,8 @@
             font_size: (root.width**2 + root.height**2) / 17**4
             text: "Não tem uma conta? Bora criar!"
             on_release:
-            root.manager.transition.direction = "right"
-            root.createBtn()
+                root.manager.transition.direction = "right"
+                root.createBtn()
 <MainWindow>:
     n: n
     email: email
